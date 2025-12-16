@@ -1,13 +1,17 @@
 import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navigation from "./components/Navigation";
-import HeroSection from "./components/HeroSection";
-import ServicesSection from "./components/ServicesSection";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-import Carousel from "./components/carouselBrands";
-import NewsSlider from "./components/NewsSlider";
 import LoadingOverlay from "./components/LoadingOverlay";
+
+import Home from "./pages/Home";
+import Fahrzeuge from "./pages/Fahrzeuge";
+import Service from "./pages/Service";
+import Werkstatt from "./pages/Werkstatt";
+import UeberUns from "./pages/UeberUns";
+import Kontakt from "./pages/Kontakt";
 
 import renaultLogo from "./assets/img/renault.png";
 import "./App.css";
@@ -23,18 +27,22 @@ function App() {
         onDone={() => setReady(true)}
       />
 
-      <div
-        className={`App transition-opacity duration-300 ${
-          ready ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        <Navigation />
-        <HeroSection />
-        <NewsSlider />
-        <ServicesSection />
-        <Carousel />
-        <Footer />
-        <ScrollToTop />
+      <div className={`transition-opacity duration-300 ${ready ? "opacity-100" : "opacity-0"}`}>
+        <BrowserRouter>
+          <Navigation />
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/fahrzeuge" element={<Fahrzeuge />} />
+            <Route path="/service" element={<Service />} />
+            <Route path="/werkstatt" element={<Werkstatt />} />
+            <Route path="/ueber-uns" element={<UeberUns />} />
+            <Route path="/kontakt" element={<Kontakt />} />
+          </Routes>
+
+          <Footer />
+          <ScrollToTop />
+        </BrowserRouter>
       </div>
     </>
   );
