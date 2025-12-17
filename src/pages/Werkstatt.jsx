@@ -6,11 +6,11 @@ const Werkstatt = () => {
       <div className="container mx-auto px-4 max-w-6xl">
 
         {/* Titel */}
-            <h2 className="text-2xl font-semibold text-[#fdc700] mt-4 mb-3">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-gray-900 mt-5">
                 Leistungen rund ums Auto
 
               </h2>
-        <h1 className="text-4xl font-bold text-gray-900 mb-6">
+        <h1 className="text-2xl font-semibold mb-4 text-[#fdc700]">
           Die Werkstatt
         </h1>
 
@@ -27,7 +27,7 @@ const Werkstatt = () => {
 
             {/* Service & Unterhalt */}
             <div>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-3">
+              <h2 className="text-2xl font-semibold mb-4 text-[#fdc700]">
                 Service und Unterhalt
               </h2>
               <p className="text-gray-700 leading-relaxed">
@@ -41,7 +41,7 @@ const Werkstatt = () => {
 
             {/* Weitere Leistungen */}
             <div>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-3">
+              <h2 className="text-2xl font-semibold mb-4 text-[#fdc700]">
                 Werkstattleistungen
               </h2>
               <ul className="list-disc list-inside text-gray-700 space-y-2">

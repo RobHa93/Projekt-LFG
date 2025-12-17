@@ -1,29 +1,33 @@
 import { useState } from "react";
+import bigsterImg from "../assets/img/dacia1.png";
+import serviceImg from "../assets/img/dacia1.png";
+import r5Img from "../assets/img/dacia1.png";
+import dusterImg from "../assets/img/dacia1.png";
 
 const newsItems = [
   {
     title: "Der brandneue BIGSTER",
     date: "tbd",
     description: "Ab sofort bei uns bereit zur Probefahrt.",
-    image: "/images/bigster.jpg",
+    image: bigsterImg,
   },
   {
     title: "Serviceaktion im Oktober",
     date: "tbd",
     description: "Profitieren Sie von attraktiven Wartungsangeboten für alle Fahrzeugmarken.",
-    image: "/images/service.jpg",
+    image: serviceImg,
   },
   {
     title: "Renault 5 E-Tech, LECTRIC R5VOLUTION",
     date: "tbd",
     description: "Und alle anderen E-Tech Modelle",
-    image: "/images/r5.jpg",
+    image: r5Img,
   },
   {
     title: "Der neue Dacia Duster",
     date: "tbd",
     description: "Mehr Duster als je zuvor",
-    image: "/images/duster.jpg",
+    image: dusterImg,
   },
 ];
 
@@ -42,47 +46,51 @@ export default function NewsSlider() {
 
   return (
     <section className="relative py-12 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">News</h2>
 
-        <div className="flex justify-center items-center relative">
-          {visibleNews.map((item, index) => (
-            <div
-              key={index}
-              className={`flex-shrink-0 w-2/5 md:w-1/3 px-2 transition-transform duration-500 ${
-                index === 1 ? "scale-100 z-20" : "scale-90 opacity-70 z-10"
-              }`}
-              style={{
-                marginLeft: index === 0 ? "-20%" : "0",
-                marginRight: index === 2 ? "-20%" : "0",
-                backgroundImage: `url(${item.image})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                height: "400px",
-                borderRadius: "1rem",
-              }}
-            >
-              <div className="bg-black/30 h-full rounded-2xl p-6 flex flex-col justify-end text-white">
-                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-sm mb-4">{item.date}</p>
-                <p className="text-sm">{item.description}</p>
-                <button className="text-yellow-400 font-medium mt-4 hover:underline">
-                  Mehr erfahren →
-                </button>
-              </div>
-            </div>
-          ))}
-
-          {/* Pfeile */}
+        <div className="relative flex justify-center items-center">
+          {/* Linker Pfeil */}
           <button
             onClick={prev}
-            className="absolute left-1/2 -translate-x-full top-1/2 -translate-y-1/2 bg-[#fdc700] hover:bg-yellow-300 rounded-full p-3 shadow-lg z-30"
+            className="absolute top-1/2 -translate-y-1/2 bg-black hover:bg-gray-800 text-white rounded-full p-3 shadow-lg z-30 w-12 h-12 flex items-center justify-center"
+            style={{ left: 'calc(50% - 350px)' }}
           >
             &#8592;
           </button>
+
+          <div className="flex justify-center items-center -space-x-8">
+            {visibleNews.map((item, index) => (
+              <div
+                key={index}
+                className={`relative flex-shrink-0 transition-all duration-500 ${
+                  index === 1 ? "w-[600px] h-[400px] z-20 scale-100" : "w-[400px] h-[300px] z-10 opacity-60"
+                }`}
+              >
+                <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-xl">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 flex flex-col justify-end text-white">
+                    <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
+                    <p className="text-sm mb-3 opacity-90">{item.date}</p>
+                    <p className="text-sm mb-4">{item.description}</p>
+                    <button className="text-yellow-400 font-medium hover:underline self-start">
+                      Mehr erfahren →
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Rechter Pfeil */}
           <button
             onClick={next}
-            className="absolute left-1/2 translate-x-full top-1/2 -translate-y-1/2 bg-[#fdc700] hover:bg-yellow-300 rounded-full p-3 shadow-lg z-30"
+            className="absolute top-1/2 -translate-y-1/2 bg-black hover:bg-gray-800 text-white rounded-full p-3 shadow-lg z-30 w-12 h-12 flex items-center justify-center"
+            style={{ right: 'calc(50% - 350px)' }}
           >
             &#8594;
           </button>

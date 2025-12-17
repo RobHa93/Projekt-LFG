@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 const SESSION_KEY = "home_loader_shown_v1";
 
 export default function LoadingOverlay({
-  durationMs = 3000,
+  durationMs = 2000,
   logoSrc,
   onDone,
 }) {

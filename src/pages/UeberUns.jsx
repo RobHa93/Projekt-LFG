@@ -2,7 +2,7 @@ import React from 'react'
 
 const UeberUns = () => {
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-16 m-3">
       <div className="container max-w-6xl mx-auto px-4">
         <h1 className="text-3xl md:text-4xl font-bold mb-12 text-gray-900 mt-5">
         Die Langenfeld Garage AG
@@ -13,7 +13,7 @@ const UeberUns = () => {
           
           {/* Linke Spalte – Geschichte */}
           <div>
-            <h2 className="text-2xl font-semibold mb-4 text-gray-900">
+            <h2 className="text-2xl font-semibold mb-4 text-[#fdc700]">
               Geschichte
             </h2>
 
@@ -45,7 +45,7 @@ const UeberUns = () => {
 
           {/* Rechte Spalte – Dienstleistungen */}
           <div>
-            <h2 className="text-2xl font-semibold mb-4 text-gray-900">
+            <h2 className="text-2xl font-semibold mb-4 text-[#fdc700]">
               Unsere Dienstleistungen
             </h2>
 

@@ -16,29 +16,35 @@ import Kontakt from "./pages/Kontakt";
 import renaultLogo from "./assets/img/renault.png";
 import "./App.css";
 
+
 function App() {
   const [ready, setReady] = useState(false);
 
   return (
     <>
       <LoadingOverlay
-        durationMs={3000}
+        durationMs={2000}
         logoSrc={renaultLogo}
         onDone={() => setReady(true)}
       />
 
-      <div className={`transition-opacity duration-300 ${ready ? "opacity-100" : "opacity-0"}`}>
+      <div
+        className={`transition-opacity duration-300 min-h-screen flex flex-col ${ready ? "opacity-100" : "opacity-0"}`}
+        style={{ minHeight: '100vh' }}
+      >
         <BrowserRouter>
           <Navigation />
 
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/fahrzeuge" element={<Fahrzeuge />} />
-            <Route path="/service" element={<Service />} />
-            <Route path="/werkstatt" element={<Werkstatt />} />
-            <Route path="/ueber-uns" element={<UeberUns />} />
-            <Route path="/kontakt" element={<Kontakt />} />
-          </Routes>
+          <div className="flex-1">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/fahrzeuge" element={<Fahrzeuge />} />
+              <Route path="/service" element={<Service />} />
+              <Route path="/werkstatt" element={<Werkstatt />} />
+              <Route path="/ueber-uns" element={<UeberUns />} />
+              <Route path="/kontakt" element={<Kontakt />} />
+            </Routes>
+          </div>
 
           <Footer />
           <ScrollToTop />

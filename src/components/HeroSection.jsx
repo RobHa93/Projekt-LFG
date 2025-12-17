@@ -1,5 +1,5 @@
 import React from 'react';
-import { CalendarDaysIcon, TruckIcon } from '@heroicons/react/24/outline';
+import { CalendarDaysIcon, ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
 import heroImage from "../assets/img/0_22img-20210330-150119-resized-20210330-030405423-002_a4e8c306.jpg"
 
 const HeroSection = () => {
@@ -13,7 +13,7 @@ const HeroSection = () => {
       btnColor: "bg-[#fdc700] text-gray-900 hover:bg-[#e6b300]",
     },
     {
-      icon: TruckIcon,
+      icon: ChatBubbleLeftRightIcon,
       title: "Probefahrt vereinbaren", 
       description: "Testen Sie Ihr Traumauto bei einer unverbindlichen Probefahrt.",
       button: "Probefahrt",
