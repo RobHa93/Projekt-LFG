@@ -54,11 +54,22 @@ const HeroSection = () => {
                 <p className="text-gray-600 mb-8 text-lg leading-relaxed">
                   {box.description}
                 </p>
-                <button
-                  className={`${box.btnColor} px-8 py-4 rounded-lg font-semibold text-lg transition-colors`}
-                >
-                  {box.button}
-                </button>
+                {box.button === "Service Buchen" ? (
+                  <a
+                    href="https://langenfeld.sopl.ch/de/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#fdc700] text-gray-900 px-4 py-2 rounded-lg hover:bg-[#e6b300] transition-colors font-semibold text-lg"
+                  >
+                    {box.button}
+                  </a>
+                ) : (
+                  <button
+                    className={`${box.btnColor} px-8 py-4 rounded-lg font-semibold text-lg transition-colors`}
+                  >
+                    {box.button}
+                  </button>
+                )}
               </div>
             );
           })}

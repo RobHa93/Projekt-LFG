@@ -1,4 +1,13 @@
 import React from 'react'
+// Team Mitglieder
+const teamMembers = [
+  { name: "Heinz Frei", role: "Verkauf / Inhaber ", email: "hfrei@langenfeld.ch", phone: "+41 62 871 17 16" },
+  { name: "Toni Hasler", role: "VVerkauf / Inhaber ", email: "thasler@langenfeld.ch", phone: "+41 62 871 17 16" },
+  { name: "Roland Heiz", role: "Leiter Aftersales ", email: "trheiz@langenfeld.ch", phone: "+41 62 871 17 16" },
+  { name: "Liridon Pajaziti", role: "Kundendienst", email: "kundendienst@langenfeld.ch", phone: "+41 62 871 17 16" },
+  { name: "Mara Keller", role: "Sekretariat ", email: "mkeller@langenfeld.ch", phone: "+41 62 871 17 16" },
+  { name: "Kessler Lukas", role: "Werkstatt, Koordination Werkstatt, Mechaniker ", phone: "+41 62 871 17 16" },
+];
 
 const UeberUns = () => {
   return (
@@ -76,6 +85,33 @@ const UeberUns = () => {
             umfasst laufend mehrere Ersatzfahrzeuge, die Ihnen zu fairen
             Preisen zur Verfügung stehen – damit Sie jederzeit mobil bleiben.
           </p>
+        </div>
+
+                {/* Überschrift */}
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-gray-900 mt-14">Unser Team</h2>
+        <p className="text-xl font-bold mb-12 text-gray-900 mt-5 ">
+          Lernen Sie unser kompetentes Team kennen – motiviert, professionell und immer für Sie da.
+        </p>
+
+                {/* Team Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 mb-16 mt-14">
+          {teamMembers.map((member, idx) => (
+            <div
+              key={idx}
+              className="bg-gray-50 text-gray-900 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 text-center"
+            >
+              {/* Avatar als Initialen */}
+              <div className="w-24 h-24 bg-[#fdc700] rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
+                {member.name.split(' ').map(n => n[0]).join('')}
+              </div>
+              <h3 className="text-lg font-semibold mb-1">{member.name}</h3>
+              <p className="text-blue-600 font-medium mb-3">{member.role}</p>
+              <div className="space-y-1 text-sm">
+                <a href={`mailto:${member.email}`} className="block hover:text-blue-600 transition-colors">📧 E-Mail</a>
+                <a href={`tel:${member.phone}`} className="block hover:text-blue-600 transition-colors">📞 {member.phone}</a>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

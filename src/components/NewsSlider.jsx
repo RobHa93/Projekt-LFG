@@ -1,8 +1,8 @@
 import { useState } from "react";
 import bigsterImg from "../assets/img/dacia1.png";
-import serviceImg from "../assets/img/dacia1.png";
+import serviceImg from "../assets/img/apline.png";
 import r5Img from "../assets/img/dacia1.png";
-import dusterImg from "../assets/img/dacia1.png";
+import dusterImg from "../assets/img/renault1.png";
 
 const newsItems = [
   {

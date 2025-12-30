@@ -103,10 +103,10 @@ const ServicesSection = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-[#fdc700] text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-[#e6b300] transition-colors">
-                📞 Jetzt anrufen
+                 Jetzt anrufen
               </button>
               <button className="bg-[#fdc700] text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-[#e6b300] transition-colors">
-                📅 Termin online buchen
+                 Termin online buchen
               </button>
             </div>
           </div>
