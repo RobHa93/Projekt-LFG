@@ -78,7 +78,7 @@ const ContactSection = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Kontakt-Formular */}
-          <div className="bg-white rounded-lg shadow-lg p-8">
+          <div className="bg-[#fef3c7] rounded-lg shadow-lg p-8">
             <h3 className="text-2xl font-semibold mb-6">Nachricht senden</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

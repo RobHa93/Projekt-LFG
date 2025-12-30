@@ -2,9 +2,19 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <section className="bg-white py-16 m-3">
-      <div className="container max-w-6xl mx-auto px-4">
-      <h2 className="text-3xl md:text-4xl font-bold mb-12 text-gray-900 mt-5">Öffnungszeiten</h2>
+    <div className="overflow-hidden bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+        <div className="max-w-4xl">
+          <p className="md:text-3xl font-semibold text-[#fdc700]">Kontakt & Öffnungszeiten</p>
+          <h1 className="mt-8 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-3xl">
+            Besuchen Sie uns
+          </h1>
+          <p className="mt-6 text-xl/8 text-balance text-gray-700">
+            Wir sind gerne für Sie da. Besuchen Sie uns zu unseren Öffnungszeiten oder kontaktieren Sie uns telefonisch oder per E-Mail.
+          </p>
+        </div>
+        <section className="mt-20">
+          <h2 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900 mb-8">Öffnungszeiten</h2>
 
         {/* 2-Spalten-Abschnitt: Öffnungszeiten */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
@@ -68,8 +78,9 @@ const Contact = () => {
             ></iframe>
           </div>
         </div>
+        </section>
       </div>
-    </section>
+    </div>
   );
 };
 

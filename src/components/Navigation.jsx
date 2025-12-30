@@ -6,8 +6,8 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
-    { name: 'Home', path: '/' },
-    { name: 'Fahrzeuge', path: '/fahrzeuge' },
+    { name: 'Mietwagen', path: '/mietwagen' },
+    { name: 'Neuwagen/Occasionen', path: '/fahrzeuge' },
    /* { name: 'Service', path: '/service' },*/
     { name: 'Werkstatt', path: '/werkstatt' },
     { name: 'Über uns', path: '/ueber-uns' },
@@ -15,8 +15,8 @@ const Navigation = () => {
   ]
 
   return (
-    <nav className="bg-black shadow-lg fixed w-full top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4">
+    <nav className="bg-black shadow-lg fixed w-full h-25 top-0 z-50">
+      <div className="max-w-7xl mx-auto px-auto mt-4">
         <div className="flex justify-between items-center h-16">
 
           {/* Logo */}

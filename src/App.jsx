@@ -8,7 +8,7 @@ import LoadingOverlay from "./components/LoadingOverlay";
 
 import Home from "./pages/Home";
 import Fahrzeuge from "./pages/Fahrzeuge";
-import Service from "./pages/Service";
+import Mietwagen from "./pages/Mietwagen";
 import Werkstatt from "./pages/Werkstatt";
 import UeberUns from "./pages/UeberUns";
 import Kontakt from "./pages/Kontakt";
@@ -39,7 +39,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/fahrzeuge" element={<Fahrzeuge />} />
-              <Route path="/service" element={<Service />} />
+              <Route path="/mietwagen" element={<Mietwagen />} />
               <Route path="/werkstatt" element={<Werkstatt />} />
               <Route path="/ueber-uns" element={<UeberUns />} />
               <Route path="/kontakt" element={<Kontakt />} />

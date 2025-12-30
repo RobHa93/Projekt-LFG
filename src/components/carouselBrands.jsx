@@ -27,6 +27,7 @@ export default function BrandCardsCarousel() {
   ];
 
   return (
+    <div className="bg-[#F9FAFB] ">
     <div className="relative w-full max-w-7xl mx-auto py-12">
       
       {/* Überschrift */}
@@ -78,6 +79,7 @@ export default function BrandCardsCarousel() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
       </button>
+    </div>
     </div>
   );
 }
