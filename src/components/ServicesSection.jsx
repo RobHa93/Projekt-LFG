@@ -79,7 +79,7 @@ const ServicesSection = () => {
               >
                 <div className="text-center">
                   <div className="flex justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <IconComponent className="h-12 w-12 text-[#fdc700]" />
+                    <IconComponent className="h-12 w-12 " />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">{service.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>

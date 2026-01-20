@@ -31,7 +31,7 @@ const Navigation = () => {
                 to={item.path}
                 className={({ isActive }) =>
                   `px-3 py-2 text-sm font-medium transition-colors
-                  ${isActive ? 'text-[#fdc700]' : 'text-white hover:text-[#fdc700]'}`
+                  ${isActive ? 'text-[#FFD131]' : 'text-white hover:text-[#FFD131]'}`
                 }
               >
                 {item.name}
@@ -46,11 +46,11 @@ const Navigation = () => {
     href="https://langenfeld.sopl.ch/de/"
     target="_blank"
     rel="noopener noreferrer"
-    className="bg-[#fdc700] text-gray-900 px-4 py-2 rounded-lg hover:bg-[#e6b300] transition-colors"
+    className="bg-[#ffd131] text-gray-900 px-4 py-2 rounded-lg hover:bg-[#e6b300] transition-colors"
   >
     Service Buchen
   </a>
-  <button className="bg-[#fdc700] text-gray-900 px-4 py-2 rounded-lg hover:bg-[#e6b300] transition-colors">
+  <button className="bg-[#ffd131] text-gray-900 px-4 py-2 rounded-lg hover:bg-[#e6b300] transition-colors">
     Probefahrt
   </button>
 </div>
@@ -60,7 +60,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-[#fdc700]"
+              className="text-white hover:text-[#ffd131]"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path

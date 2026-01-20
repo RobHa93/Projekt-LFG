@@ -20,7 +20,7 @@ const UeberUns = () => {
     <div className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <div className="max-w-4xl">
-          <p className="md:text-3xl font-semibold text-[#fdc700]">Über uns</p>
+          <p className="md:text-3xl font-semibold text-[#ffd131]">Über uns</p>
           <h1 className="mt-8 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-3xl">
             Die Langenfeld Garage AG
           </h1>
