@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Img1 from '../assets/img/werkstatt1.jpg'
 import Img2 from '../assets/img/werkstatt5.jpg'
 import Img3 from '../assets/img/werkstatt3.jpg'
@@ -6,6 +6,13 @@ import Img4 from '../assets/img/werkstatt4.jpg'
 
 
 const Werkstatt = () => {
+  const [imagesVisible, setImagesVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setImagesVisible(true), 700);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
@@ -84,28 +91,36 @@ const Werkstatt = () => {
           {/* Rechte Spalte - Bildergalerie */}
           <div className="pt-16 lg:row-span-2 lg:-mr-16 xl:mr-auto">
             <div className="-mx-8 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 xl:gap-8">
-              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+              <div className={`aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition-all duration-700 ease-in ${
+                imagesVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
+              }`}>
                 <img
                       alt="Werkstatt Bild 1"
                       src={Img1}
                   className="block size-full object-cover"
                 />
               </div>
-              <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
+              <div className={`-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40 transition-all duration-700 ease-in delay-150 ${
+                imagesVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
+              }`}>
                 <img
                   alt="Werkstatt Bild 2"
                   src={Img2}
                   className="block size-full object-cover"
                 />
               </div>
-              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+              <div className={`aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition-all duration-700 ease-in delay-300 ${
+                imagesVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
+              }`}>
                 <img
                   alt="Werkstatt Bild 3"
                   src={Img3}
                   className="block size-full object-cover"
                 />
               </div>
-              <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
+              <div className={`-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40 transition-all duration-700 ease-in delay-500 ${
+                imagesVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
+              }`}>
                 <img
                   alt="Werkstatt Bild 4"
                   src={Img4}
