@@ -23,7 +23,7 @@ const ServicesSection = () => {
           observer.disconnect();
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.4 }
     );
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
@@ -127,10 +127,10 @@ const ServicesSection = () => {
             <br />
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-[#fdc700] text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-[#e6b300] transition-colors">
-                 Jetzt anrufen
+              <button className="bg-[#000000] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#e6b300] transition-colors">
+                 Kontakt aufnehmen
               </button>
-              <button className="bg-[#fdc700] text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-[#e6b300] transition-colors">
+              <button className="bg-[#000000] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#e6b300] transition-colors">
                  Termin online buchen
               </button>
             </div>
