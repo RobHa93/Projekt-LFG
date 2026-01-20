@@ -7,10 +7,10 @@ const HeroSection = () => {
     {
       icon: CalendarDaysIcon,
       title: "Servicetermin buchen",
-      description: "Vereinbaren Sie schnell und einfach einen Termin für die Wartung Ihres Fahrzeugs.",
+      description: "Vereinbaren Sie schnell und einfach einen Termin für die Wartung Ihres Fahrzeugs. ",
       button: "Service Buchen",
       color: "bg-white",
-      btnColor: "bg-[#fdc700] text-gray-900 hover:bg-[#e6b300]",
+      btnColor: "bg-[#000000] text-gray-900 hover:bg-[#e6b300]",
     },
     {
       icon: ChatBubbleLeftRightIcon,
@@ -18,7 +18,7 @@ const HeroSection = () => {
       description: "Testen Sie Ihr Traumauto bei einer unverbindlichen Probefahrt.",
       button: "Probefahrt",
       color: "bg-white",
-      btnColor: "bg-[#fdc700] text-gray-900 hover:bg-[#e6b300]",
+      btnColor: "bg-[#000000] text-white hover:bg-[#e6b300]",
     },
   ];
 
@@ -51,15 +51,16 @@ const HeroSection = () => {
                 <h3 className="text-2xl font-bold mb-4 text-gray-800">
                   {box.title}
                 </h3>
-                <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+                <p className="text-gray-600 mb-8 text-lg leading-relaxed"> 
                   {box.description}
                 </p>
+                 
                 {box.button === "Service Buchen" ? (
                   <a
                     href="https://langenfeld.sopl.ch/de/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#fdc700] text-gray-900 px-4 py-2 rounded-lg hover:bg-[#e6b300] transition-colors font-semibold text-lg"
+                    className="bg-[#000000] text-white px-8 py-4 rounded-lg  hover:bg-[#e6b300] transition-colors font-semibold text-lg"
                   >
                     {box.button}
                   </a>

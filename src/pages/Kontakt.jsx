@@ -33,25 +33,25 @@ const Contact = () => {
         {/* Assistance & Kontakt Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* Renault Assistance */}
-          <div className="bg-[#fdc700] rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow">
-            <h3 className="text-xl font-semibold mb-4 text-gray-900"> Renault Assistance</h3>
-            <p className="text-black">
+          <div className="bg-[#000000]  rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow">
+            <h3 className="text-xl font-semibold mb-4 text-white"> Renault Assistance</h3>
+            <p className="text-white">
               044 834 12 00 <br />
               Rund um die Uhr Unterstützung für Ihren Renault.
             </p>
           </div>
           {/* Dacia Assistance */}
-          <div className="bg-[#fdc700] rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow">
-            <h3 className="text-xl font-semibold mb-4 text-gray-900"> Dacia Assistance</h3>
-            <p className="text-black">
+          <div className="bg-[#000000] rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow">
+            <h3 className="text-xl font-semibold mb-4 text-white"> Dacia Assistance</h3>
+            <p className="text-white">
               044 777 03 75 <br />
               Hilfe und Support für alle Dacia Modelle jederzeit verfügbar.
             </p>
           </div>
           {/* Kontakt */}
-          <div className="bg-[#fdc700] rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow">
-            <h3 className="text-xl font-semibold mb-4 text-gray-900"> Kontakt</h3>
-            <p className="text-black">
+          <div className="bg-[#000000] rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow">
+            <h3 className="text-xl font-semibold mb-4 text-white"> Kontakt</h3>
+            <p className="text-white">
               Tel: 062 871 17 16<br />
               Fax: 062 871 58 16<br />
               <a href="mailto:info@langenfeld.ch" className="underline hover:text-blue-700">info@langenfeld.ch</a>
@@ -63,7 +63,7 @@ const Contact = () => {
         {/* Box: Google Map */}
         <div className="grid grid-cols-1 gap-8">
           {/* Google Map */}
-          <div className="bg-[#fdc700] rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow">
+          <div className="bg-gray-200 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow">
             <h3 className="text-xl font-semibold mb-4">📍 Standort</h3>
             <p className="text-black mb-4">Oeschgen-Frick</p>
             {/* Optional: Google Maps Embed */}
