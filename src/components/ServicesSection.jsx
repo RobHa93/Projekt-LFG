@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   CogIcon,
   WrenchScrewdriverIcon,
@@ -12,6 +12,25 @@ import {
 } from '@heroicons/react/24/outline';
 
 const ServicesSection = () => {
+  const [visible, setVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new window.IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2 }
+    );
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+    return () => observer.disconnect();
+  }, []);
+
   const services = [
     {
       icon: CogIcon,
@@ -58,7 +77,13 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="service" className="py-20 bg-gray-50">
+    <section
+      ref={sectionRef}
+      id="service"
+      className={`py-20 bg-gray-50 transition-opacity duration-700 ease-in ${
+        visible ? "opacity-100" : "opacity-0"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4">
         {/* Überschrift */}
         <div className="text-center mb-16">
