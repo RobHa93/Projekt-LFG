@@ -139,7 +139,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Call-to-Action */}
-        <div className="text-center mt-12">
+        <div className="mt-30 text-center">
           <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 group">
             <h3 className="text-2xl font-semibold mb-4">
               Fragen zu unseren Services?
