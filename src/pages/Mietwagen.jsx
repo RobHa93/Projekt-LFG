@@ -6,7 +6,7 @@ import Mietbedingungen from '../components/Mietbedingungen.jsx';
 
 const Mietwagen = () => {
   return (
-    <div className="overflow-hidden bg-white py-24 sm:py-32">
+    <div className="overflow-hidden bg-gray-50 py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         {/* Header */}
         <div className="max-w-4xl mb-12">
