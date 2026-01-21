@@ -1,1 +1,75 @@
-"Preis pro 1/2 Tag, Anzahl Plätze Bus, Art Bus, Bild-Bus, Text-Bus."
+[
+  {
+    "id": 1,
+    "name": "9-Plätzer",
+    "art": "Personenbus",
+    "anzahlPlaetze": 9,
+    "preisProHalbtag": 120,
+    "bild": "/src/assets/img/9pl_thumb.jpg",
+    "text": "Renault Trafic Personenbus 9-Plätze inkl. Fahrer",
+    "preisliste": {
+      "50": 150,
+      "100": 180,
+      "150": 210,
+      "200": 240,
+      "300": 300,
+      "400": 360,
+      "500+": "individuell"
+    },
+    "bilder": [
+      "/src/assets/img/9pl_1.jpg",
+      "/src/assets/img/9pl_2.jpg",
+      "/src/assets/img/9pl_3.jpg", 
+      "/src/assets/img/9pl_4.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "14-Plätzer",
+    "art": "Personenbus",
+    "anzahlPlaetze": 14,
+    "preisProHalbtag": 150,
+    "bild": "/src/assets/img/14pl_thumb.jpg",
+    "text": "Renault Master Personenbus 14-Plätze inkl. Fahrer",
+    "preisliste": {
+      "50": 180,
+      "100": 220,
+      "150": 260,
+      "200": 300,
+      "300": 380,
+      "400": 460,
+      "500+": "individuell"
+    },
+    "bilder": [
+      "/src/assets/img/14pl_1.jpg",
+      "/src/assets/img/14pl_2.jpg",
+      "/src/assets/img/14pl_3.jpg",
+      "/src/assets/img/14pl_4.jpg"
+
+    ]
+  },
+  {
+    "id": 3,
+    "name": "14-Plätzer",
+    "art": "Personenbus",
+    "anzahlPlaetze": 14,
+    "preisProHalbtag": 150,
+    "bild": "/src/assets/img/14_1pl_thumb.jpg",
+    "text": "Renault Master Personenbus 14-Plätze inkl. Fahrer",
+    "preisliste": {
+      "50": 180,
+      "100": 220,
+      "150": 260,
+      "200": 300,
+      "300": 380,
+      "400": 460,
+      "500+": "individuell"
+    },
+    "bilder": [
+      "/src/assets/img/14_1pl_1.jpg",
+      "/src/assets/img/14_1pl_2.jpg",
+      "/src/assets/img/14_1pl_3.jpg",
+      "/src/assets/img/14_1pl_4.jpg"
+    ]
+  }
+]
