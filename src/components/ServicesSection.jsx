@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { 
   CogIcon,
   WrenchScrewdriverIcon,
@@ -36,43 +37,51 @@ const ServicesSection = () => {
       icon: CogIcon,
       title: "Werkstatt & Kundendienst",
       description: "Schnell und zuverlässig – Service für Ihr Fahrzeug",
+      link: "/werkstatt"
     },
     {
       icon: WrenchScrewdriverIcon,
       title: "Mobilitätslösung",
       description: "Ersatzfahrzeug oder andere Lösungen während der Reparatur",
+      link: null
     },
     {
       icon: TruckIcon,
       title: "Zügeln/Transportieren",
       description: "Sichern Sie sich das perfekte Fahrzeug für Ihren Umzug oder Transport: Bereits ab 20 CHF/Stunde.",
+      link: "/mietwagen"
     },
     {
       icon: PaintBrushIcon,
       title: "Werkstatt & Carrosserie",
       description: "Karosserie- und Lackierarbeiten fachgerecht und preiswert",
+      link: "/werkstatt"
     },
     {
       icon: WindowIcon,
       title: "Glas-Service",
       description: "Frontscheibe & weitere Glasreparaturen inkl. Versicherungsabwicklung",
+      link: null
     },
     {
       icon: CheckCircleIcon,
       title: "Motorfahrzeugkontrolle",
       description: "Vorbereitung und Vorführen zur MFK inkl. Mobilitätslösung",
+      link: null
     },
     {
       icon: CubeIcon,
       title: "Tankstelle",
       description: "Top-Preise und 24 Stunden für Sie offen",
       details: "Erdgas-Tankstelle mit bargeldloser Bezahlung via Tankkarte oder EC-/Kreditkarte. Profitieren Sie von attraktiven Konditionen.",
+      link: "/tankstelle-und-waschanlage"
     },
     {
       icon: BriefcaseIcon,
       title: "Waschanlage",
       description: "Moderne Waschanlage mit Osmosewasser",
       details: "Doppelportal-Waschanlage von 07:00 bis 22:00 Uhr. SB-Waschplätze mit Hochdruckreiniger und Staubsauger 24h verfügbar. Bargeldlose Zahlung möglich.",
+      link: "/tankstelle-und-waschanlage"
     },
   ];
 
@@ -97,11 +106,8 @@ const ServicesSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => {
             const IconComponent = service.icon;
-            return (
-              <div 
-                key={index}
-                className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 group"
-              >
+            const CardContent = (
+              <>
                 <div className="text-center">
                   <div className="flex justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                     <IconComponent className="h-12 w-12 " />
@@ -110,6 +116,23 @@ const ServicesSection = () => {
                   <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
                   {service.details && <p className="text-gray-500 text-xs mt-2">{service.details}</p>}
                 </div>
+              </>
+            );
+
+            return service.link ? (
+              <Link 
+                key={index}
+                to={service.link}
+                className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 group block"
+              >
+                {CardContent}
+              </Link>
+            ) : (
+              <div 
+                key={index}
+                className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 group"
+              >
+                {CardContent}
               </div>
             );
           })}

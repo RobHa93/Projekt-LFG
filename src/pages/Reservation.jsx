@@ -59,12 +59,14 @@ const Reservation = () => {
   };
 
   return (
-    <div className="bg-gray-50 py-16">
-      <div className="max-w-7xl mx-auto px-4">
+    <div className="overflow-hidden bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         {/* Header */}
-        <div className="mb-8">
-          <h2 className="text-xl font-semibold text-[#fdc700] mb-2">Reservation</h2>
-          <h1 className="text-4xl font-bold text-gray-900">{vehicle.name}</h1>
+        <div className="max-w-4xl mb-8">
+          <p className="md:text-3xl font-semibold text-[#fdc700]">Reservation</p>
+          <h1 className="mt-8 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-3xl">
+            {vehicle.name}
+          </h1>
         </div>
 
         {/* Main Content Grid */}

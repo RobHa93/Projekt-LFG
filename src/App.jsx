@@ -11,6 +11,7 @@ import Fahrzeuge from "./pages/Fahrzeuge";
 import Mietwagen from "./pages/Mietwagen";
 import Reservation from "./pages/Reservation";
 import Werkstatt from "./pages/Werkstatt";
+import TankstelleUndWaschanlage from "./pages/TankstelleUndWaschanlage";
 import UeberUns from "./pages/UeberUns";
 import Kontakt from "./pages/Kontakt";
 
@@ -43,6 +44,7 @@ function App() {
               <Route path="/mietwagen" element={<Mietwagen />} />
               <Route path="/mietwagen/:id" element={<Reservation />} />
               <Route path="/werkstatt" element={<Werkstatt />} />
+              <Route path="/tankstelle-und-waschanlage" element={<TankstelleUndWaschanlage />} />
               <Route path="/ueber-uns" element={<UeberUns />} />
               <Route path="/kontakt" element={<Kontakt />} />
             </Routes>
