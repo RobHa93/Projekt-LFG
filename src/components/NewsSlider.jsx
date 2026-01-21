@@ -53,10 +53,12 @@ export default function NewsSlider() {
           {/* Linker Pfeil */}
           <button
             onClick={prev}
-            className="absolute top-1/2 -translate-y-1/2 bg-black hover:bg-gray-800 text-white rounded-full p-3 shadow-lg z-30 w-12 h-12 flex items-center justify-center"
+            className="absolute top-1/2 -translate-y-1/2 bg-[#fdc700] hover:bg-yellow-300 rounded-full p-4 shadow-xl transition-all duration-200 hover:scale-110 z-30"
             style={{ left: 'calc(50% - 350px)' }}
           >
-            &#8592;
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
           </button>
 
           <div className="flex justify-center items-center -space-x-8">
@@ -89,10 +91,12 @@ export default function NewsSlider() {
           {/* Rechter Pfeil */}
           <button
             onClick={next}
-            className="absolute top-1/2 -translate-y-1/2 bg-black hover:bg-gray-800 text-white rounded-full p-3 shadow-lg z-30 w-12 h-12 flex items-center justify-center"
+            className="absolute top-1/2 -translate-y-1/2 bg-[#fdc700] hover:bg-yellow-300 rounded-full p-4 shadow-xl transition-all duration-200 hover:scale-110 z-30"
             style={{ right: 'calc(50% - 350px)' }}
           >
-            &#8594;
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
           </button>
         </div>
       </div>
