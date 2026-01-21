@@ -50,9 +50,13 @@ const Navigation = () => {
   >
     Service Buchen
   </a>
-  <button className="bg-[#ffd131] text-gray-900 px-4 py-2 rounded-lg hover:bg-[#e6b300] transition-colors">
-    Probefahrt
-  </button>
+ <NavLink
+  to="/Probefahrt"
+  className="bg-[#ffd131] text-gray-900 px-4 py-2 rounded-lg hover:bg-[#e6b300] transition-colors"
+>
+  Probefahrt
+</NavLink>
+
 </div>
 
 
@@ -105,9 +109,14 @@ const Navigation = () => {
   >
     Service Buchen
   </a>
-  <button className="w-full bg-[#fdc700] text-gray-900 px-4 py-2 rounded-lg hover:bg-[#e6b300] transition-colors">
-    Probefahrt
-  </button>
+  <NavLink
+  to="/Probefahrt"
+  onClick={() => setIsOpen(false)}
+  className="w-full block text-center bg-[#fdc700] text-gray-900 px-4 py-2 rounded-lg hover:bg-[#e6b300] transition-colors"
+>
+  Probefahrt
+</NavLink>
+
 </div>
 
             </div>

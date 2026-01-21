@@ -14,6 +14,7 @@ import Werkstatt from "./pages/Werkstatt";
 import TankstelleUndWaschanlage from "./pages/TankstelleUndWaschanlage";
 import UeberUns from "./pages/UeberUns";
 import Kontakt from "./pages/Kontakt";
+import Probefahrt from "./pages/Probefahrt";
 
 import renaultLogo from "./assets/img/renault.png";
 import "./App.css";
@@ -47,6 +48,7 @@ function App() {
               <Route path="/tankstelle-und-waschanlage" element={<TankstelleUndWaschanlage />} />
               <Route path="/ueber-uns" element={<UeberUns />} />
               <Route path="/kontakt" element={<Kontakt />} />
+              <Route path="/Probefahrt" element={<Probefahrt />} />
             </Routes>
           </div>
 
