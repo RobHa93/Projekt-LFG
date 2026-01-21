@@ -2,7 +2,7 @@ import daciaLogo from '../assets/img/dacia-logo.webp';
 import renaultLogo from '../assets/img/Renault-logo.webp';
 
 const LogosRow = () => (
-<div className="bg-gray-50 flex flex-col sm:flex-row mt-12 sm:mt-20 justify-center items-center gap-6 sm:gap-8 md:gap-12 py-8 px-4">    <div className="flex flex-col items-center">
+<div className="bg-gray-50 flex flex-col sm:flex-row mt-12 sm:mt-20 justify-center items-center gap-6 sm:gap-8 md:gap-12 py-8 px-4 overline decoration-[#FFD131] decoration-2">    <div className="flex flex-col items-center">
       <img src={renaultLogo} alt="Renault Logo" className="h-12 sm:h-14 md:h-16 w-auto object-contain mb-2" />
       <div className="text-gray-900 font-semibold text-base sm:text-lg bg-white px-2 py-1 rounded mt-1 whitespace-nowrap">
         Verkauf, Werkstatt, Service
