@@ -17,6 +17,13 @@ const ServicesSection = () => {
   const sectionRef = useRef(null);
 
   useEffect(() => {
+    // Auf Mobile immer sichtbar, auf Desktop mit Intersection Observer
+    const isMobile = window.innerWidth < 768;
+    if (isMobile) {
+      setVisible(true);
+      return;
+    }
+
     const observer = new window.IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
