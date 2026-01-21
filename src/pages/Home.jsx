@@ -7,13 +7,13 @@ import LogosRow from '../components/LogosRow'
 
 const Home = () => {
   return (
-    <>
+    <div className="bg-gray-50">
       <HeroSection />
       <NewsSlider />
       <LogosRow />
       <ServicesSection />
       <Carousel />
-    </>
+    </div>
   )
 }
 
