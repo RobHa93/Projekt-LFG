@@ -12,6 +12,7 @@ import Mietwagen from "./pages/Mietwagen";
 import Werkstatt from "./pages/Werkstatt";
 import UeberUns from "./pages/UeberUns";
 import Kontakt from "./pages/Kontakt";
+import Probefahrt from "./pages/Probefahrt";
 
 import renaultLogo from "./assets/img/renault.png";
 import "./App.css";
@@ -43,6 +44,7 @@ function App() {
               <Route path="/werkstatt" element={<Werkstatt />} />
               <Route path="/ueber-uns" element={<UeberUns />} />
               <Route path="/kontakt" element={<Kontakt />} />
+              <Route path="/Probefahrt" element={<Probefahrt />} />
             </Routes>
           </div>
 
