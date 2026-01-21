@@ -1,6 +1,6 @@
 import React from 'react';
 import { CalendarDaysIcon, ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
-import heroImage from "../assets/img/0_22img-20210330-150119-resized-20210330-030405423-002_a4e8c306.jpg"
+import heroVideo from "../assets/mp4/LFG_Banner.mp4"
 
 const HeroSection = () => {
   const cards = [
@@ -24,11 +24,14 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="relative bg-gray-50">
-      {/* --- Bannerbild --- */}
-      <div className="relative h-[700px] w-full bg-gray-50">
-        <img
-          src={heroImage}
-          alt="Autocenter LFG"
+      {/* --- Bannervideo --- */}
+      <div className="relative h-[700px] w-full bg-gray-50 overflow-hidden">
+        <video
+          src={heroVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
           className="w-full h-full object-cover"
         />
         {/* leichte Abdunklung */}
