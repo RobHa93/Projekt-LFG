@@ -1,0 +1,91 @@
+{
+  "mitarbeiter": [
+    {
+      "name": "Toni Hasler",
+      "team": "Geschaeftsleitung",
+      "rollen": ["Verkauf", "Inhaber"],
+      "telefon": "+41 62 871 17 16",
+      "email": "thasler@langenfeld.ch"
+    },
+    {
+      "name": "Heinz Frei",
+      "team": "Geschaeftsleitung",
+      "rollen": ["Verkauf", "Inhaber"],
+      "telefon": "+41 62 871 17 16",
+      "email": "hfrei@langenfeld.ch"
+    },
+
+    {
+      "name": "Roland Heiz",
+      "team": "Buero",
+      "rollen": ["Leiter Aftersales"],
+      "telefon": "+41 62 871 17 16",
+      "email": "rheiz@langenfeld.ch"
+    },
+    {
+      "name": "Liridon Pajaziti",
+      "team": "Buero",
+      "rollen": ["Kundendienst"],
+      "telefon": "+41 62 871 17 16",
+      "email": "kundendienst@langenfeld.ch"
+    },
+    {
+      "name": "Mara Keller",
+      "team": "Buero",
+      "rollen": ["Sekretariat"],
+      "telefon": "+41 62 871 17 16",
+      "email": "mkeller@langenfeld.ch"
+    },
+
+    {
+      "name": "Lukas Kessler",
+      "team": "Werkstatt",
+      "rollen": ["Werkstatt", "Koordination", "Mechaniker"]
+    },
+    {
+      "name": "Felix Obrist",
+      "team": "Werkstatt",
+      "rollen": ["Werkstatt", "Mechaniker"]
+    },
+    {
+      "name": "Roger Senn",
+      "team": "Werkstatt",
+      "rollen": ["Werkstatt", "Mechaniker"]
+    },
+    {
+      "name": "Seraina Wolf",
+      "team": "Werkstatt",
+      "rollen": ["Werkstatt", "Mechanikerin"]
+    },
+    {
+      "name": "Eliasz Wasik",
+      "team": "Werkstatt",
+      "rollen": ["Werkstatt", "Mechaniker"]
+    },
+    {
+      "name": "Pascal Stadelmann",
+      "team": "Werkstatt",
+      "rollen": ["Werkstatt", "Mechaniker"]
+    },
+    {
+      "name": "Diart Ibrahimi",
+      "team": "Werkstatt",
+      "rollen": ["Werkstatt", "Mechaniker"]
+    },
+    {
+      "name": "Mexhid Mujota",
+      "team": "Werkstatt",
+      "rollen": ["Werkstatt", "Allrounder"]
+    },
+    {
+      "name": "Oliver Schraner",
+      "team": "Werkstatt",
+      "rollen": ["Werkstatt", "Mechaniker", "Lehrling"]
+    },
+    {
+      "name": "Janis Grieshaber",
+      "team": "Werkstatt",
+      "rollen": ["Werkstatt", "Mechaniker", "Lehrling"]
+    }
+  ]
+}

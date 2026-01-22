@@ -15,16 +15,7 @@ export default function Footer() {
           </p>
           <div className="flex space-x-4">
             <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white transition-colors"
-              aria-label="Instagram"
-            >
-              <FaInstagram size={24} />
-            </a>
-            <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/company/langenfeld-garage/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"

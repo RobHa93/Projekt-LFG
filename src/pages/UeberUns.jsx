@@ -1,19 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react'
+import MitarbeiterPortrait from '../components/MitarbeiterPortrait'
+import mitarbeiterData from '../data/Mitarbeiter.json'
 import Img1 from '../assets/img/showroom1.jpg'  
 import Img2 from '../assets/img/showroom2.jpg'  
 import Img3 from '../assets/img/showroom3.jpg'  
 import Img4 from '../assets/img/showroom4.jpg'
 import Img5 from '../assets/img/showroom5.jpg'
 
-// Team Mitglieder
-const teamMembers = [
-  { name: "Heinz Frei", role: "Verkauf / Inhaber ", email: "hfrei@langenfeld.ch", phone: "+41 62 871 17 16" },
-  { name: "Toni Hasler", role: "VVerkauf / Inhaber ", email: "thasler@langenfeld.ch", phone: "+41 62 871 17 16" },
-  { name: "Roland Heiz", role: "Leiter Aftersales ", email: "trheiz@langenfeld.ch", phone: "+41 62 871 17 16" },
-  { name: "Liridon Pajaziti", role: "Kundendienst", email: "kundendienst@langenfeld.ch", phone: "+41 62 871 17 16" },
-  { name: "Mara Keller", role: "Sekretariat ", email: "mkeller@langenfeld.ch", phone: "+41 62 871 17 16" },
-  { name: "Kessler Lukas", role: "Werkstatt, Koordination Werkstatt, Mechaniker ", phone: "+41 62 871 17 16" },
-];
 
 const UeberUns = () => {
   const [dienstleistungenImageVisible, setDienstleistungenImageVisible] = useState(false);
@@ -189,25 +182,43 @@ const UeberUns = () => {
           </p>
 
           {/* Team Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 mb-16">
-            {teamMembers.map((member, idx) => (
-              <div
-                key={idx}
-                className="bg-gray-50 text-gray-900 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 text-center"
-              >
-                {/* Avatar als Initialen */}
-                <div className="w-24 h-24 bg-[#fdc700] rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
-                  {member.name.split(' ').map(n => n[0]).join('')}
-                </div>
-                <h3 className="text-lg font-semibold mb-1">{member.name}</h3>
-                <p className="text-blue-600 font-medium mb-3">{member.role}</p>
-                <div className="space-y-1 text-sm">
-                  <a href={`mailto:${member.email}`} className="block hover:text-blue-600 transition-colors">📧 E-Mail</a>
-                  <a href={`tel:${member.phone}`} className="block hover:text-blue-600 transition-colors">📞 {member.phone}</a>
-                </div>
-              </div>
-            ))}
+          
+          {/* Geschäftsleitung - Erste Zeile */}
+          <div className="mb-8">
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Geschäftsleitung</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {mitarbeiterData.mitarbeiter
+                .filter(person => person.team === 'Geschaeftsleitung')
+                .map((person) => (
+                  <MitarbeiterPortrait key={person.name} person={person} />
+                ))}
+            </div>
           </div>
+
+          {/* Büro - Zweite Zeile */}
+          <div className="mb-8">
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Büro</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {mitarbeiterData.mitarbeiter
+                .filter(person => person.team === 'Buero')
+                .map((person) => (
+                  <MitarbeiterPortrait key={person.name} person={person} />
+                ))}
+            </div>
+          </div>
+
+          {/* Werkstatt - 4er Grid */}
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Werkstatt</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {mitarbeiterData.mitarbeiter
+                .filter(person => person.team === 'Werkstatt')
+                .map((person) => (
+                  <MitarbeiterPortrait key={person.name} person={person} />
+                ))}
+            </div>
+          </div>
+                
         </section>
       </div>
     </div>
