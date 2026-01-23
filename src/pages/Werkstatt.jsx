@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import Img1 from '../assets/img/werkstatt1.jpg'
-import Img2 from '../assets/img/werkstatt5.jpg'
-import Img3 from '../assets/img/werkstatt3.jpg'
-import Img4 from '../assets/img/werkstatt4.jpg' 
+import Img1 from '../assets/img/Werkstatt1.jpg'
+import Img2 from '../assets/img/Werkstatt5.jpg'
+import Img3 from '../assets/img/Werkstatt3.jpg'
+import Img4 from '../assets/img/Werkstatt4.jpg' 
 
 
 const Werkstatt = () => {
