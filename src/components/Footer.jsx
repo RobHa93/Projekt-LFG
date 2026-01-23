@@ -1,11 +1,42 @@
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { useState, useEffect, useRef } from "react";
 import Impressum from "../pages/Impressum";
 import Datenschutz from "../pages/Datenschutz";
 
 export default function Footer() {
+  const [isVisible, setIsVisible] = useState(false);
+  const footerRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            setIsVisible(true);
+          }, 100);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (footerRef.current) {
+      observer.observe(footerRef.current);
+    }
+
+    return () => {
+      if (footerRef.current) {
+        observer.unobserve(footerRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <footer className="bg-black text-gray-300">
-      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+    <footer ref={footerRef} className="bg-black text-gray-300">
+      <div 
+        className={`max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10 transition-opacity duration-1000 ${
+          isVisible ? 'opacity-200' : 'opacity-0'
+        }`}
+      >
         {/* Firmenname & Social */}
         <div>
           <h2 className="text-white text-xl font-bold mb-4">
