@@ -14,20 +14,20 @@ const Werkstatt = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden bg-white py-24 sm:py-32">
+    <div className="overflow-hidden bg-gray-50 py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <div className="max-w-4xl">
           <p className="md:text-3xl font-semibold text-[#fdc700]">Leistungen rund ums Auto</p>
           <h1 className="mt-8 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-3xl">
             Die Werkstatt
           </h1>
-          <p className="mt-6 text-xl/8 text-balance text-gray-700">
+          <p className="mt-6 text-base/7 text-gray-600">
             Seit 1995 folgen wir den strengen Vorgaben unseres Qualitätsmanagements und garantieren unseren Kunden dadurch besten Service. Unsere Mitarbeiter verfügen über eine grosse Expertise, unsere Werkstatt ist mit den modernsten Gerätschaften ausgestattet.
           </p>
         </div>
         <section className="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
           <div className="lg:pr-8">
-            <h2 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900">
+            <h2 className="mt-8 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-3xl">
               Service und Unterhalt
             </h2>
             <p className="mt-6 text-base/7 text-gray-600">
@@ -42,7 +42,7 @@ const Werkstatt = () => {
 
             {/* Werkstattleistungen */}
             <div className="mt-12">
-              <h2 className="text-2xl font-semibold tracking-tight text-gray-900">
+              <h2 className="mt-8 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-3xl">
                 Werkstattleistungen
               </h2>
               <ul className="mt-6 list-disc list-inside text-base/7 text-gray-600 space-y-2">
@@ -61,26 +61,26 @@ const Werkstatt = () => {
               </h2>
 
               {/* Ansprechpartner 1 */}
-              <div className="mb-6">
+              <div className="mb-6 border-l-2 border-black pl-4">
                 <p className="font-semibold text-gray-800">Roland Heiz</p>
                 <p className="text-gray-700">Leiter Aftersales</p>
                 <p className="text-gray-700">+41 62 871 17 16</p>
                 <a
                   href="mailto:rheiz@langenfeld.ch"
-                  className="text-sky-500 hover:underline"
+                  className=" hover:underline"
                 >
                   rheiz@langenfeld.ch
                 </a>
               </div>
 
               {/* Ansprechpartner 2 */}
-              <div>
+              <div className="border-l-2 border-black pl-4">
                 <p className="font-semibold text-gray-800">Liridon Pajaziti</p>
                 <p className="text-gray-700">Kundendienst</p>
                 <p className="text-gray-700">+41 62 871 17 16</p>
                 <a
                   href="mailto:kundendienst@langenfeld.ch"
-                  className="text-sky-500 hover:underline"
+                  className=" hover:underline"
                 >
                   kundendienst@langenfeld.ch
                 </a>

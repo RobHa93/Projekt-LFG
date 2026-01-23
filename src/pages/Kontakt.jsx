@@ -9,7 +9,7 @@ const Contact = () => {
           <h1 className="mt-8 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-3xl">
             Besuchen Sie uns
           </h1>
-          <p className="mt-6 text-xl/8 text-balance text-gray-700">
+          <p className="mt-6 text-xl/8 text-gray-700">
             Wir sind gerne für Sie da. Besuchen Sie uns zu unseren Öffnungszeiten oder kontaktieren Sie uns telefonisch oder per E-Mail.
           </p>
         </div>

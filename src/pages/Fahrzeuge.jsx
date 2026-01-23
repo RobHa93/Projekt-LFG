@@ -2,9 +2,10 @@ import React from 'react'
 
 const Fahrzeuge = () => {
   return (
-   <section className="bg-[#F9FAFB] py-16 m-3">
+   <section className="bg-gray-50 py-24 sm:py-32">
       <div className="container max-w-6xl mx-auto px-4">
-        <h1 className="text-3xl md:text-4xl font-bold mb-12 text-gray-900 mt-5">Neuwagen/Occasionen</h1>
+        <p className="md:text-3xl font-semibold text-[#fdc700]">Unser Angebot</p>
+        <h1 className="mt-8 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-3xl mb-12">Neuwagen/Occasionen</h1>
       </div>
    </section>
   )

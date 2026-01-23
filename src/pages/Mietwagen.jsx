@@ -20,17 +20,18 @@ const Mietwagen = () => {
           <div className="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Text */}
             <div className="lg:col-span-2">
-              <p className="text-xl/8 text-balance text-gray-700">
+              <p className="mt-6 text-base/7 text-gray-600">
                 Ob für die Vermietung, einen Umzug oder den Möbeltransport: Hier finden Sie das passende Mietauto. In unserem Personentransport reisen Sie bequem zwischen neun und vierzehn Personen. Für Transporte jeder Art bieten wir Ihnen das Mietfahrzeug ganz einfach online an reservieren Sie das Mietfahrzeug aus und reservieren es.
               </p>
             </div>
             
             {/* Contact Info Box */}
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="font-semibold text-gray-900 mb-2">Mara Keller</h3>
-              <p className="text-gray-700 text-sm mb-1">Ihr Ansprechpartner Mietwagen</p>
+            <div className="p-6 bg-gray-50  border-l-2 border-black ">
+              <h3 className="text-xl font-semibold text-[#fdc700] mb-4">Ihre Ansprechpartnerin</h3>
+              <p className="font-semibold text-gray-800 mb-1">Mara Keller</p>
+              <p className="text-gray-700 text-sm mb-1">Mietwagen</p>
               <p className="text-gray-900 font-medium">+41 62 871 17 16</p>
-              <a href="mailto:info@langenfeld.ch" className="text-[#fdc700] hover:underline">
+              <a href="mailto:info@langenfeld.ch" className=" hover:underline">
                 info@langenfeld.ch
               </a>
             </div>

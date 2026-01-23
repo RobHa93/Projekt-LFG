@@ -12,7 +12,7 @@ const TankstelleUndWaschanlage = () => {
             <h1 className="mt-8 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-3xl mb-6">
               Tankstelle
             </h1>
-            <p className="text-xl/8 text-balance text-gray-700 mb-6">
+            <p className="text-xl/8 text-gray-700 mb-6">
               Geniessen Sie die zahlreichen Vorteile einer Kundenkarte.
               Hier finden Sie alle wichtigen Informationen:
               von den Kartenanträgen für Firmen und Privatkunden bis hin zu Bestellungen von Ersatz-, Zusatz- oder Vorzahlerkarten.
@@ -30,7 +30,7 @@ const TankstelleUndWaschanlage = () => {
             <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-3xl mb-6">
               Waschtechnik
             </h2>
-            <p className="text-xl/8 text-balance text-gray-700 mb-6">
+            <p className="text-xl/8 text-gray-700 mb-6">
               Unsere neue Doppelportal Waschanlage wäscht Ihr Fahrzeug schonend und trotzdem sauber. Wir verfügen über mehr als 25 Jahre Erfahrung in diesem Bereich und wissen genau worauf es ankommt.
             </p>
 

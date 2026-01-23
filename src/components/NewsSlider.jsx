@@ -1,8 +1,8 @@
 import { useState } from "react";
-import bigsterImg from "../assets/img/dacia1.png";
-import serviceImg from "../assets/img/apline.png";
-import r5Img from "../assets/img/dacia1.png";
-import dusterImg from "../assets/img/renault1.png";
+import bigsterImg from "../assets/img/apline.png";
+import serviceImg from "../assets/img/slider_test3.webp";
+import r5Img from "../assets/img/slider_test2.webp";
+import dusterImg from "../assets/img/slider_test1.webp";
 
 const newsItems = [
   {
@@ -47,7 +47,7 @@ export default function NewsSlider() {
   return (
     <section className="relative py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">News</h2>
+        <h2 className="text-4xl font-bold text-gray-800 my-12 text-center">Aktuelles</h2>
 
         <div className="relative flex justify-center items-center">
           {/* Linker Pfeil */}

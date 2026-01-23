@@ -30,7 +30,7 @@ const Navigation = () => {
                 key={item.name}
                 to={item.path}
                 className={({ isActive }) =>
-                  `px-3 py-2 text-sm font-medium transition-colors
+                  `px-3 py-2 text-lg font-medium transition-colors
                   ${isActive ? 'text-[#FFD131]' : 'text-white hover:text-[#FFD131]'}`
                 }
               >
