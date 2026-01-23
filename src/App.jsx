@@ -15,6 +15,8 @@ import TankstelleUndWaschanlage from "./pages/TankstelleUndWaschanlage";
 import UeberUns from "./pages/UeberUns";
 import Kontakt from "./pages/Kontakt";
 import Probefahrt from "./pages/Probefahrt";
+import Impressum from "./pages/Impressum";
+import Datenschutz from "./pages/Datenschutz";
 
 import renaultLogo from "./assets/img/renault.png";
 import "./App.css";
@@ -49,6 +51,8 @@ function App() {
               <Route path="/ueber-uns" element={<UeberUns />} />
               <Route path="/kontakt" element={<Kontakt />} />
               <Route path="/Probefahrt" element={<Probefahrt />} />
+              <Route path="/Impressum" element={<Impressum />} />
+              <Route path="/Datenschutz" element={<Datenschutz />} />
             </Routes>
           </div>
 

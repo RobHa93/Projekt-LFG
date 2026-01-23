@@ -1,4 +1,6 @@
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import Impressum from "../pages/Impressum";
+import Datenschutz from "../pages/Datenschutz";
 
 export default function Footer() {
   return (
@@ -61,8 +63,8 @@ export default function Footer() {
 
       {/* Untere Leiste */}
       <div className="border-t border-gray-700 text-center text-sm py-4">
-        <a href="#" className="hover:text-white mx-2">Impressum</a> |
-        <a href="#" className="hover:text-white mx-2">Datenschutz</a>
+        <a href="/Impressum" className="hover:text-white mx-2">Impressum</a> |
+        <a href="/Datenschutz" className="hover:text-white mx-2">Datenschutz</a>
       </div>
     </footer>
   );
