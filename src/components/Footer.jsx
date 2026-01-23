@@ -1,7 +1,6 @@
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { useState, useEffect, useRef } from "react";
-import Impressum from "../pages/Impressum";
-import Datenschutz from "../pages/Datenschutz";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const [isVisible, setIsVisible] = useState(false);
@@ -94,8 +93,8 @@ export default function Footer() {
 
       {/* Untere Leiste */}
       <div className="border-t border-gray-700 text-center text-sm py-4">
-        <a href="/Impressum" className="hover:text-white mx-2">Impressum</a> |
-        <a href="/Datenschutz" className="hover:text-white mx-2">Datenschutz</a>
+        <Link to="/Impressum" className="hover:text-white mx-2">Impressum</Link> |
+        <Link to="/Datenschutz" className="hover:text-white mx-2">Datenschutz</Link>
       </div>
     </footer>
   );

@@ -4,7 +4,7 @@
     "name": "Renault Trafic",
     "art": "Kastenwagen klein",
     "preisProStunde": 20,
-    "bild": "/src/assets/img/kw_klein_thumb.jpg",
+    "bild": "/img/kw_klein_thumb.jpg",
     "text": "Renault Trafic Ladelänge am Boden: LxBxH 280cm. x 169cm. x 138cm. Aussenhöhe: 196cm. Nutzlast: 1086kg.",
     "preisliste": {
       "50": 120,
@@ -16,9 +16,9 @@
       "500+": "individuell"
     },
     "bilder": [
-      "/src/assets/img/kw_klein_1.jpg",
-      "/src/assets/img/kw_klein_2.jpg",
-      "/src/assets/img/kw_klein_3.jpg"
+      "/img/kw_klein_1.jpg",
+      "/img/kw_klein_2.jpg",
+      "/img/kw_klein_3.jpg"
     ]
   },
   {
@@ -26,7 +26,7 @@
     "name": "Renault Master",
     "art": "Kastenwagen mittel",
     "preisProStunde": 30,
-    "bild": "/src/assets/img/kw_mittel_thumb.jpg",
+    "bild": "/img/kw_mittel_thumb.jpg",
     "text": "Renault Master Ladelänge am Boden: LxBxH 300cm. x 176cm. x 189cm. Aussenhöhe: 250cm. Nutzlast: 1300kg.",
     "preisliste": {
       "50": 130,
@@ -38,9 +38,9 @@
       "500+": "individuell"
     },
     "bilder": [
-      "/src/assets/img/kw_mittel_1.jpg",
-      "/src/assets/img/kw_mittel_2.jpg",
-      "/src/assets/img/kw_mittel_3.jpg"
+      "/img/kw_mittel_1.jpg",
+      "/img/kw_mittel_2.jpg",
+      "/img/kw_mittel_3.jpg"
     ]
   },
   {
@@ -48,7 +48,7 @@
     "name": "Renault Master",
     "art": "Kastenwagen gross",
     "preisProStunde": 40,
-    "bild": "/src/assets/img/kw_gross_thumb.jpg",
+    "bild": "/img/kw_gross_thumb.jpg",
     "text": "Renault Master Ladelänge am Boden: LxBxH 370cm. x 176cm. x 189cm. Aussenhöhe: 250cm. Nutzlast: 1300kg.",
     "preisliste": {
       "50": 140,
@@ -60,9 +60,9 @@
       "500+": "individuell"
     },
     "bilder": [
-      "/src/assets/img/kw_gross_1.jpg",
-      "/src/assets/img/kw_gross_2.jpg",
-       "/src/assets/img/kw_gross_3.jpg"
+      "/img/kw_gross_1.jpg",
+      "/img/kw_gross_2.jpg",
+       "/img/kw_gross_3.jpg"
     ]
   },
   {
@@ -70,7 +70,7 @@
     "name": "Renault Master",
     "art": "Kastenwagen gross",
     "preisProStunde": 40,
-    "bild": "/src/assets/img/kw_gross(1)_thumb.jpg",
+    "bild": "/img/kw_gross(1)_thumb.jpg",
     "text": "Renault Master Ladelänge am Boden: LxBxH 370cm. x 176cm. x 189cm. Aussenhöhe: 250cm. Nutzlast: 1300kg.",
     "preisliste": {
       "50": 140,
@@ -82,9 +82,9 @@
       "500+": "individuell"
     },
     "bilder": [
-      "/src/assets/img/kw_gross(1)_1.jpg",
-      "/src/assets/img/kw_gross(1)_2.jpg",
-      "/src/assets/img/kw_gross(1)_3.jpg"
+      "/img/kw_gross(1)_1.jpg",
+      "/img/kw_gross(1)_2.jpg",
+      "/img/kw_gross(1)_3.jpg"
     ]
   }
 ]
