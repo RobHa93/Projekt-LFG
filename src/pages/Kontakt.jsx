@@ -6,9 +6,9 @@ const Contact = () => {
     <div className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         {/* Header mit Bild */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12  mb-20">
           <div>
-            <p className="md:text-3xl font-semibold text-[#fdc700]">Kontakt & Öffnungszeiten</p>
+            <p className="mt-5 text-3xl md:text-3xl font-semibold text-[#fdc700]">Kontakt & Öffnungszeiten</p>
             <h1 className="mt-8 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-3xl">
               Besuchen Sie uns
             </h1>

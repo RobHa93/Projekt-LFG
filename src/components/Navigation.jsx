@@ -20,7 +20,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
 
           {/* Logo */}
-      <a href="/">
+      <a href="/" className="md:ml-0 ml-auto mr-auto">
     <img src={Logo} alt="AutoCenter LFG" className="h-12" />
   </a>
           {/* Desktop Navigation */}

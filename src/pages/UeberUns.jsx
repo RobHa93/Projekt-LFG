@@ -60,22 +60,19 @@ const UeberUns = () => {
     <div className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <div className="max-w-4xl">
-          <p className="md:text-3xl font-semibold text-[#fdc700]">Über uns</p>
+          <p className="mt-5 text-3xl md:text-3xl font-semibold text-[#fdc700]">Über uns</p>
           <h1 className="mt-8 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-3xl">
             Die Langenfeld Garage AG
           </h1>
-          <p className="mt-6 text-xl/8 text-balance text-gray-700">
-            Seit 1989 Ihr verlässlicher Partner für Mobilität im Fricktal.
-          </p>
         </div>
 
         {/* Geschichte Sektion mit Bild rechts */}
-        <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8">
+        <div className=" mt-16 grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8">
           <div>
             <h2 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900">
               Geschichte
             </h2>
-            <p className="mt-6 text-xl/8 text-gray-700">
+            <p className="mt-6 text-base/7 text-gray-600">
               Seit 1989 stehen wir im Fricktal für Kompetenz,
               Zuverlässigkeit und persönliche Beratung rund ums Automobil.
               Als etablierter Garagenbetrieb vertreten wir erfolgreich
@@ -142,7 +139,7 @@ const UeberUns = () => {
         </div>
 
         {/* Bildergalerie */}
-        <div ref={galerieRef} className="mt-20">
+        <div ref={galerieRef} className="mt-20 hidden lg:block">
           <div className="flex flex-wrap items-start justify-center gap-6 sm:gap-8">
             <div className="w-full sm:w-auto">
               <img

@@ -10,7 +10,7 @@ const Mietwagen = () => {
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         {/* Header */}
         <div className="max-w-4xl mb-12">
-          <p className="md:text-3xl font-semibold text-[#fdc700]">
+          <p className="mt-5 text-3xl md:text-3xl font-semibold text-[#fdc700]">
             Schnell und unkompliziert
           </p>
           <h1 className="mt-8 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-3xl">

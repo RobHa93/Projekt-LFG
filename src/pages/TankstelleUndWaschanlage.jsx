@@ -1,11 +1,12 @@
 import React from 'react';
+import tankstelleImg from '../assets/img/tankstelle.jpg';
 
 const TankstelleUndWaschanlage = () => {
   return (
     <div className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <div className="max-w-4xl">
-          <p className="md:text-3xl font-semibold text-[#fdc700]">Gut gepflegt</p>
+          <p className="mt-5 text-3xl md:text-3xl font-semibold text-[#fdc700]">Gut gepflegt</p>
           
           {/* Tankstelle Section */}
           <div className="mb-16">
@@ -26,6 +27,11 @@ const TankstelleUndWaschanlage = () => {
           </div>
 
           {/* Waschtechnik Section */}
+          {/* Tankstelle Bild */}
+          <div className="mb-12">
+            <img src={tankstelleImg} alt="Tankstelle" className="w-full max-w-3xl rounded-2xl shadow-lg" />
+          </div>
+
           <div>
             <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-3xl mb-6">
               Waschtechnik

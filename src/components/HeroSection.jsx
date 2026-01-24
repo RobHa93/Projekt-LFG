@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { CalendarDaysIcon, ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
 import heroVideo from "../assets/mp4/LFG_Banner.mp4"
 import heroImage from "../assets/img/lfg_frontImg.jpg"
@@ -71,16 +72,17 @@ const HeroSection = () => {
                     href="https://langenfeld.sopl.ch/de/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#000000] text-white px-8 py-4 rounded-lg  hover:bg-[#e6b300] transition-colors font-semibold text-lg"
+                    className="inline-block bg-[#000000] text-white px-8 py-4 rounded-lg hover:bg-[#e6b300] transition-colors font-semibold text-lg"
                   >
                     {box.button}
                   </a>
                 ) : (
-                  <button
-                    className={`${box.btnColor} px-8 py-4 rounded-lg font-semibold text-lg transition-colors`}
+                  <a
+                    href="/Probefahrt"
+                    className="inline-block bg-[#000000] text-white px-8 py-4 rounded-lg hover:bg-[#e6b300] transition-colors font-semibold text-lg"
                   >
                     {box.button}
-                  </button>
+                  </a>
                 )}
               </div>
             );

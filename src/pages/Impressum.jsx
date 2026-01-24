@@ -4,7 +4,7 @@ const Impressum = () => {
   return (
    <section className="bg-gray-50 py-24 sm:py-32">
       <div className="container max-w-6xl mx-auto px-4">
-        <p className="md:text-3xl font-semibold text-[#fdc700]">Rechtliches</p>
+        <p className="mt-5 text-3xl md:text-3xl font-semibold text-[#fdc700]">Rechtliches</p>
         <h1 className="mt-8 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-3xl mb-12">Impressum</h1>
         <div className="text-xl/8 text-gray-700">
           <p className="font-semibold">Langenfeld Garage AG</p>

@@ -157,12 +157,12 @@ const ServicesSection = () => {
             <br />
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-[#000000] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#e6b300] transition-colors">
+              <Link to="/Kontakt" className="bg-[#000000] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#e6b300] transition-colors text-center">
                  Kontakt aufnehmen
-              </button>
-              <button className="bg-[#000000] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#e6b300] transition-colors">
+              </Link>
+              <a href="https://langenfeld.sopl.ch/de/" target="_blank" rel="noopener noreferrer" className="bg-[#000000] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#e6b300] transition-colors text-center">
                  Termin online buchen
-              </button>
+              </a>
             </div>
           </div>
         </div>
