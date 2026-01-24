@@ -1,5 +1,6 @@
 import React from 'react';
 import tankstelleImg from '../assets/img/tankstelle.jpg';
+import tankstelleImg2 from '../assets/img/tankstelle2.jpg';
 
 const TankstelleUndWaschanlage = () => {
   return (
@@ -29,7 +30,7 @@ const TankstelleUndWaschanlage = () => {
           {/* Waschtechnik Section */}
           {/* Tankstelle Bild */}
           <div className="mb-12">
-            <img src={tankstelleImg} alt="Tankstelle" className="w-full max-w-3xl rounded-2xl shadow-lg" />
+            <img src={tankstelleImg2} alt="Tankstelle" className="w-full max-w-3xl rounded-2xl shadow-lg" />
           </div>
 
           <div>
@@ -69,7 +70,7 @@ const TankstelleUndWaschanlage = () => {
             {/* Platzhalter Bild */}
             <div className="mt-8 rounded-lg overflow-hidden shadow-lg">
               <img 
-                src="/src/assets/img/werkstatt1.jpg" 
+                src={tankstelleImg} 
                 alt="Waschanlage" 
                 className="w-full h-96 object-cover"
               />

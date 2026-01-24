@@ -77,12 +77,12 @@ const HeroSection = () => {
                     {box.button}
                   </a>
                 ) : (
-                  <a
-                    href="/Probefahrt"
+                  <Link
+                    to="/Probefahrt"
                     className="inline-block bg-[#000000] text-white px-8 py-4 rounded-lg hover:bg-[#e6b300] transition-colors font-semibold text-lg"
                   >
                     {box.button}
-                  </a>
+                  </Link>
                 )}
               </div>
             );

@@ -204,10 +204,10 @@ const UeberUns = () => {
             </div>
           </div>
 
-          {/* Werkstatt - 4er Grid */}
+          {/* Werkstatt - 3er Grid */}
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Werkstatt</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
               {mitarbeiterData.mitarbeiter
                 .filter(person => person.team === 'Werkstatt')
                 .map((person) => (
