@@ -17,6 +17,8 @@ const Reservation = () => {
   const [selectedTime, setSelectedTime] = useState('07:00');
   const [selectedDistance, setSelectedDistance] = useState('50');
   const [currentMonth, setCurrentMonth] = useState(new Date());
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   if (!vehicle) {
     return <div className="py-20 text-center">Fahrzeug nicht gefunden</div>;
@@ -56,6 +58,23 @@ const Reservation = () => {
   const handleDateSelect = (day) => {
     const selected = `${day}.${month + 1}.${year}`;
     setSelectedDate(selected);
+  };
+
+  const openLightbox = (index) => {
+    setCurrentImageIndex(index);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+  };
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % vehicle.bilder.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + vehicle.bilder.length) % vehicle.bilder.length);
   };
 
   return (
@@ -248,7 +267,11 @@ const Reservation = () => {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Fahrzeugbilder</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {vehicle.bilder.map((img, index) => (
-                <div key={index} className="aspect-video overflow-hidden rounded-lg shadow-md">
+                <div 
+                  key={index} 
+                  className="aspect-video overflow-hidden rounded-lg shadow-md cursor-pointer"
+                  onClick={() => openLightbox(index)}
+                >
                   <img
                     src={img}
                     alt={`${vehicle.name} ${index + 1}`}
@@ -257,6 +280,46 @@ const Reservation = () => {
                 </div>
               ))}
             </div>
+          </div>
+        )}
+
+        {/* Lightbox Modal */}
+        {lightboxOpen && vehicle.bilder && (
+          <div 
+            className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center"
+            onClick={closeLightbox}
+          >
+            <button
+              onClick={closeLightbox}
+              className="absolute top-4 right-4 text-white text-4xl hover:text-[#fdc700] transition-colors z-10"
+            >
+              &times;
+            </button>
+            
+            <button
+              onClick={(e) => { e.stopPropagation(); prevImage(); }}
+              className="absolute left-4 text-white text-5xl hover:text-[#fdc700] transition-colors z-10"
+            >
+              &#8249;
+            </button>
+            
+            <div className="max-w-7xl max-h-[90vh] p-4" onClick={(e) => e.stopPropagation()}>
+              <img
+                src={vehicle.bilder[currentImageIndex]}
+                alt={`${vehicle.name} ${currentImageIndex + 1}`}
+                className="max-w-full max-h-[85vh] object-contain mx-auto rounded-lg"
+              />
+              <div className="text-center text-white mt-4">
+                {currentImageIndex + 1} / {vehicle.bilder.length}
+              </div>
+            </div>
+            
+            <button
+              onClick={(e) => { e.stopPropagation(); nextImage(); }}
+              className="absolute right-4 text-white text-5xl hover:text-[#fdc700] transition-colors z-10"
+            >
+              &#8250;
+            </button>
           </div>
         )}
 
