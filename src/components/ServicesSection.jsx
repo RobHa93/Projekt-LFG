@@ -40,11 +40,23 @@ const ServicesSection = () => {
   }, []);
 
   const services = [
-    {
+{
       icon: CogIcon,
       title: "Werkstatt & Kundendienst",
       description: "Schnell und zuverlässig – Service für Ihr Fahrzeug",
       link: "/werkstatt"
+    },
+    {
+      icon: WindowIcon,
+      title: "Glas / Carrosserie",
+      description: "Frontscheibe & weitere Glasreparaturen inkl. Versicherungsabwicklung",
+      link: "/werkstatt"
+    },
+    {
+      icon: CheckCircleIcon,
+      title: "Motorfahrzeugkontrolle",
+      description: "Vorbereitung und Vorführen zur MFK inkl. Mobilitätslösung",
+      link: null
     },
     {
       icon: WrenchScrewdriverIcon,
@@ -59,36 +71,24 @@ const ServicesSection = () => {
       link: "/mietwagen"
     },
     {
-      icon: PaintBrushIcon,
-      title: "Werkstatt & Carrosserie",
-      description: "Karosserie- und Lackierarbeiten fachgerecht und preiswert",
-      link: "/werkstatt"
-    },
-    {
-      icon: WindowIcon,
-      title: "Glas-Service",
-      description: "Frontscheibe & weitere Glasreparaturen inkl. Versicherungsabwicklung",
-      link: null
-    },
-    {
-      icon: CheckCircleIcon,
-      title: "Motorfahrzeugkontrolle",
-      description: "Vorbereitung und Vorführen zur MFK inkl. Mobilitätslösung",
-      link: null
-    },
-    {
       icon: CubeIcon,
       title: "Tankstelle",
       description: "Top-Preise und 24 Stunden für Sie offen",
-      details: "Erdgas-Tankstelle mit bargeldloser Bezahlung via Tankkarte oder EC-/Kreditkarte. Profitieren Sie von attraktiven Konditionen.",
-      link: "/tankstelle-und-waschanlage"
+      details: "Erdgas-Tankstelle mit bargeldloser Bezahlung via Tankkarte oder EC-/Kreditkarte.",
+      link: "/tankstelle"
+    },
+    {
+      icon: PaintBrushIcon,
+      title: "Waschanlage & Pflege",
+      description: "Moderne Autowaschanlage und Fahrzeugpflege für strahlenden Glanz",
+      link: "/waschanlage"
     },
     {
       icon: BriefcaseIcon,
-      title: "Waschanlage",
-      description: "Moderne Waschanlage mit Osmosewasser",
-      details: "Doppelportal-Waschanlage von 07:00 bis 22:00 Uhr. SB-Waschplätze mit Hochdruckreiniger und Staubsauger 24h verfügbar. Bargeldlose Zahlung möglich.",
-      link: "/tankstelle-und-waschanlage"
+      title: "Verkauf & Beratung",
+      description: "Verkauf von Neu- und Occasionsfahrzeugen",
+      details: "Unser Verkaufsteam berät Sie gerne bei der Auswahl Ihres neuen Fahrzeugs.",
+      link: "/verkauf"
     },
   ];
 
@@ -110,7 +110,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => {
             const IconComponent = service.icon;
             const CardContent = (

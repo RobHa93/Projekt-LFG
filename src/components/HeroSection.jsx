@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { CalendarDaysIcon, ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
+import { CalendarDaysIcon, ChatBubbleLeftRightIcon, TruckIcon } from '@heroicons/react/24/outline';
 import heroVideo from "../assets/mp4/LFG_Banner.mp4"
 import heroImage from "../assets/img/lfg_frontImg.jpg"
 
@@ -9,19 +9,31 @@ const HeroSection = () => {
     {
       icon: CalendarDaysIcon,
       title: "Servicetermin buchen",
-      description: "Vereinbaren Sie schnell und einfach einen Termin für die Wartung Ihres Fahrzeugs. ",
+      description: "Vereinbaren Sie schnell und einfach einen Termin für Ihr Fahrzeug. ",
       button: "Service Buchen",
+      link: "https://langenfeld.sopl.ch/de/",
+      external: true,
       color: "bg-white",
-      btnColor: "bg-[#000000] text-gray-900 hover:bg-[#e6b300]",
+      btnColor: "bg-[#000000] text-white hover:bg-[#e6b300]",
     },
     {
       icon: ChatBubbleLeftRightIcon,
       title: "Probefahrt vereinbaren", 
       description: "Testen Sie Ihr Traumauto bei einer unverbindlichen Probefahrt.",
       button: "Probefahrt",
+      link: "/probefahrt",
       color: "bg-white",
       btnColor: "bg-[#000000] text-white hover:bg-[#e6b300]",
     },
+    {
+      icon: TruckIcon,
+      title: "Mietwagen reservieren",
+      description: "Mieten Sie ein Fahrzeug für Ihren Umzug, Transport oder Ihre Reise.",
+      button: "Mietwagen",
+      link: "/mietwagen",
+      color: "bg-white",
+      btnColor: "bg-[#000000] text-white hover:bg-[#e6b300]",
+    }
   ];
 
   return (
@@ -48,8 +60,8 @@ const HeroSection = () => {
       </div>
 
       {/* --- Überlappende Boxen --- */}
-      <div className="relative -mt-50 z-10 max-w-4xl mx-auto px-4 bg-transparent">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="relative -mt-50 z-10 max-w-6xl mx-auto px-4 bg-transparent">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {cards.map((box, i) => {
             const IconComponent = box.icon;
             return (
@@ -67,9 +79,9 @@ const HeroSection = () => {
                   {box.description}
                 </p>
                  
-                {box.button === "Service Buchen" ? (
+                {box.external ? (
                   <a
-                    href="https://langenfeld.sopl.ch/de/"
+                    href={box.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-[#000000] text-white px-8 py-4 rounded-lg hover:bg-[#e6b300] transition-colors font-semibold text-lg"
@@ -78,7 +90,7 @@ const HeroSection = () => {
                   </a>
                 ) : (
                   <Link
-                    to="/Probefahrt"
+                    to={box.link}
                     className="inline-block bg-[#000000] text-white px-8 py-4 rounded-lg hover:bg-[#e6b300] transition-colors font-semibold text-lg"
                   >
                     {box.button}

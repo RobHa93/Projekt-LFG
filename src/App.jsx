@@ -11,12 +11,14 @@ import Fahrzeuge from "./pages/Fahrzeuge";
 import Mietwagen from "./pages/Mietwagen";
 import Reservation from "./pages/Reservation";
 import Werkstatt from "./pages/Werkstatt";
-import TankstelleUndWaschanlage from "./pages/TankstelleUndWaschanlage";
+import Tankstelle from "./pages/Tankstelle";
+import Waschanlage from "./pages/Waschanlage";
 import UeberUns from "./pages/UeberUns";
 import Kontakt from "./pages/Kontakt";
 import Probefahrt from "./pages/Probefahrt";
 import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
+import Verkauf from "./pages/Verkauf";
 
 import renaultLogo from "./assets/img/renault.png";
 import "./App.css";
@@ -47,12 +49,14 @@ function App() {
               <Route path="/mietwagen" element={<Mietwagen />} />
               <Route path="/mietwagen/:id" element={<Reservation />} />
               <Route path="/werkstatt" element={<Werkstatt />} />
-              <Route path="/tankstelle-und-waschanlage" element={<TankstelleUndWaschanlage />} />
+              <Route path="/tankstelle" element={<Tankstelle />} />
+              <Route path="/waschanlage" element={<Waschanlage />} />
               <Route path="/ueber-uns" element={<UeberUns />} />
               <Route path="/kontakt" element={<Kontakt />} />
               <Route path="/Probefahrt" element={<Probefahrt />} />
               <Route path="/Impressum" element={<Impressum />} />
               <Route path="/Datenschutz" element={<Datenschutz />} />
+              <Route path="/verkauf" element={<Verkauf />} />
             </Routes>
           </div>
 
