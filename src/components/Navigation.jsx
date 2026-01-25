@@ -30,7 +30,7 @@ const Navigation = () => {
                 key={item.name}
                 to={item.path}
                 className={({ isActive }) =>
-                  `px-2 lg:px-4 xl:px-6 py-2 text-base lg:text-lg font-medium transition-colors whitespace-nowrap
+                  `px-3 lg:px-4 xl:px-6 mr-5 py-2 text-base lg:text-lg font-medium transition-colors whitespace-nowrap
                   ${isActive ? 'text-[#FFD131]' : 'text-white hover:text-[#FFD131]'}`
                 }
               >
@@ -41,7 +41,7 @@ const Navigation = () => {
 
           {/* CTA Buttons */}
         {/* CTA Buttons */}
-<div className="hidden md:flex space-x-2 lg:space-x-4">
+<div className="hidden ml-2 md:flex space-x-2 lg:space-x-4">
   <a
     href="https://langenfeld.sopl.ch/de/"
     target="_blank"
