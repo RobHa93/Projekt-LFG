@@ -1,6 +1,7 @@
 import React from 'react'
 import daciaLogo from '../assets/img/dacia-logo.webp';
 import renaultLogo from '../assets/img/Renault-logo.webp';
+import werbevideo from '../assets/mp4/RAFALE_WEB_16x9_20s_DE.mp4';
 
 const Verkauf = () => {
   return (
@@ -77,6 +78,21 @@ const Verkauf = () => {
           </div>
         </div>
         
+        {/* Video Section */}
+        <div className="max-w-5xl mb-12 justify-center mx-auto">
+          <div className="rounded-xl overflow-hidden shadow-lg">
+            <video 
+              className="w-full h-auto"
+              autoPlay 
+              muted 
+              loop 
+              playsInline
+            >
+              <source src={werbevideo} type="video/mp4" />
+              Ihr Browser unterstützt das Video-Format nicht.
+            </video>
+          </div>
+        </div>
 
         
       </div>
