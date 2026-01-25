@@ -12,8 +12,8 @@ const newsItems = [
     image: bigsterImg,
   },
   {
-    title: "Serviceaktion im Oktober",
-    date: "tbd",
+    title: "Serviceaktion im Januar",
+    date: "1. Januar - 31. Januar 2024",
     description: "Profitieren Sie von attraktiven Wartungsangeboten für alle Fahrzeugmarken.",
     image: serviceImg,
   },

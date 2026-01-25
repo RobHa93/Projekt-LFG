@@ -181,9 +181,9 @@ const UeberUns = () => {
           {/* Team Cards */}
           
           {/* Geschäftsleitung - Erste Zeile */}
-          <div className="mb-8">
+          <div className="mb-15">
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Geschäftsleitung</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
               {mitarbeiterData.mitarbeiter
                 .filter(person => person.team === 'Geschaeftsleitung')
                 .map((person) => (
@@ -193,9 +193,9 @@ const UeberUns = () => {
           </div>
 
           {/* Büro - Zweite Zeile */}
-          <div className="mb-8">
+          <div className="mb-15">
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Büro</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
               {mitarbeiterData.mitarbeiter
                 .filter(person => person.team === 'Buero')
                 .map((person) => (
@@ -207,7 +207,7 @@ const UeberUns = () => {
           {/* Werkstatt - 3er Grid */}
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Werkstatt</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 gap-y-15">
               {mitarbeiterData.mitarbeiter
                 .filter(person => person.team === 'Werkstatt')
                 .map((person) => (
