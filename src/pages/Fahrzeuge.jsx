@@ -4,8 +4,10 @@ const Fahrzeuge = () => {
   const [isLocalhost, setIsLocalhost] = useState(false);
 
   useEffect(() => {
-    // Prüfe ob wir auf localhost sind
-    setIsLocalhost(window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+    // Prüfe ob wir NICHT auf der erlaubten Domain sind
+    const hostname = window.location.hostname;
+    const isAllowedDomain = hostname === 'langenfeld.ch' || hostname === 'www.langenfeld.ch';
+    setIsLocalhost(!isAllowedDomain);
 
     // Lade das AutoScout24 Script dynamisch
     const script = document.createElement('script');
@@ -29,19 +31,24 @@ const Fahrzeuge = () => {
           <h1 className="mt-8 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-3xl mb-12">Neuwagen/Occasionen</h1>
         </div>
         
-        {/* Localhost Warnung */}
+        {/* Warnung für nicht-erlaubte Domains */}
         {isLocalhost && (
           <div className="mb-8 p-6 bg-yellow-50 border-l-4 border-yellow-400 rounded-lg">
             <h3 className="text-lg font-semibold text-yellow-800 mb-2">
-              ⚠️ Entwicklungsmodus
+              UPS... Da ist etwas schief gelaufen
             </h3>
-            <p className="text-yellow-700">
-              Das AutoScout24 Widget kann auf localhost nicht angezeigt werden (CSP-Einschränkung). 
-              Es funktioniert nur auf der Live-Domain: <strong>langenfeld.ch</strong>
+            <p className="text-yellow-700 mb-4">
+              Das AutoScout24 Widget kann nur auf der Live-Domain angezeigt werden.
             </p>
-            <p className="text-yellow-700 mt-2">
-              In der Zwischenzeit: <a href="https://www.autoscout24.ch/de/s/seller-64300" target="_blank" rel="noopener noreferrer" className="underline font-semibold hover:text-yellow-900">
-                Zur AutoScout24 Seite →
+            <p className="text-yellow-700">
+              In der Zwischenzeit besuchen Sie unsere AutoScout24 Seite:{' '}
+              <a 
+                href="https://www.autoscout24.ch/de/s/seller-64300" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-blue-600 underline hover:text-blue-800 font-semibold"
+              >
+                AutoScout24 - Langenfeld Garage AG
               </a>
             </p>
           </div>
