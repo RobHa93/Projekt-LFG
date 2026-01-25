@@ -145,27 +145,7 @@ const ServicesSection = () => {
           })}
         </div>
 
-        {/* Call-to-Action */}
-        <div className="mt-30 text-center">
-          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 group">
-            <h3 className="text-2xl font-semibold mb-4">
-              Fragen zu unseren Services?
-            </h3>
-            <p className="text-black mb-6">
-              Vereinbaren Sie telefonisch einen Werkstatt-Termin oder kontaktieren Sie uns für eine Beratung.
-            </p>
-            <br />
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/Kontakt" className="bg-[#000000] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#e6b300] transition-colors text-center">
-                 Kontakt aufnehmen
-              </Link>
-              <a href="https://langenfeld.sopl.ch/de/" target="_blank" rel="noopener noreferrer" className="bg-[#000000] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#e6b300] transition-colors text-center">
-                 Termin online buchen
-              </a>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   );

@@ -1,7 +1,7 @@
 import HeroSection from '../components/HeroSection'
 import NewsSlider from '../components/NewsSlider'
 import ServicesSection from '../components/ServicesSection'
-
+import CtaHome from '../components/CtaHome'
 import LogosRow from '../components/LogosRow'
 
 const Home = () => {
@@ -9,8 +9,9 @@ const Home = () => {
     <div className="bg-gray-50">
       <HeroSection />
       <NewsSlider />
-      <LogosRow />
       <ServicesSection />
+      <LogosRow />
+      <CtaHome />
     </div>
   )
 }

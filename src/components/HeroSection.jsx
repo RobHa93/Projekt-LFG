@@ -9,7 +9,7 @@ const HeroSection = () => {
     {
       icon: CalendarDaysIcon,
       title: "Servicetermin buchen",
-      description: "Vereinbaren Sie schnell und einfach einen Termin für Ihr Fahrzeug. ",
+      description: "Vereinbaren Sie schnell und einfach einen Termin. ",
       button: "Service Buchen",
       link: "https://langenfeld.sopl.ch/de/",
       external: true,
