@@ -56,13 +56,13 @@ const ServicesSection = () => {
       icon: CheckCircleIcon,
       title: "Motorfahrzeugkontrolle",
       description: "Vorbereitung und Vorführen zur MFK inkl. Mobilitätslösung",
-      link: null
+      link: "/werkstatt"
     },
     {
       icon: WrenchScrewdriverIcon,
       title: "Mobilitätslösung",
       description: "Ersatzfahrzeug oder andere Lösungen während der Reparatur",
-      link: null
+      link: "/werkstatt"
     },
     {
       icon: TruckIcon,
