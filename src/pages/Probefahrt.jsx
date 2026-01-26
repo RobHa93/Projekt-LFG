@@ -160,25 +160,6 @@ export default function Probefahrt() {
               </div>
             </div>
 
-            {/* Bedingungen */}
-            <div className="flex items-start gap-3">
-              <input
-                type="checkbox"
-                id="bedingungen"
-                name="bedingungen"
-                required
-                checked={formData.bedingungen}
-                onChange={handleChange}
-                className="w-4 h-4 mt-1 text-[#fdc700] focus:ring-[#fdc700] rounded"
-              />
-              <label htmlFor="bedingungen" className="text-sm text-gray-700">
-                Ich akzeptiere die{' '}
-                <a href="#" className="text-[#fdc700] hover:underline font-semibold">
-                  allgemeinen Geschäftsbedingungen
-                </a>
-                . <span className="text-red-500">*</span>
-              </label>
-            </div>
 
             {/* Submit Button */}
             <button

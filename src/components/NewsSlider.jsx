@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import bigsterImg from "../assets/img/apline.png";
 import serviceImg from "../assets/img/slider_test3.webp";
 import r5Img from "../assets/img/slider_test2.webp";
@@ -37,6 +37,15 @@ export default function NewsSlider() {
 
   const next = () => setCurrentIndex((prev) => (prev + 1) % totalNews);
   const prev = () => setCurrentIndex((prev) => (prev - 1 + totalNews) % totalNews);
+
+  // Automatische Rotation alle 6 Sekunden
+  useEffect(() => {
+    const interval = setInterval(() => {
+      next();
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex]);
 
   const visibleNews = [
     newsItems[currentIndex],
